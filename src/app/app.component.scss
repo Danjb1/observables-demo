@@ -1,0 +1,24 @@
+.panel {
+    background: #f4f0e8;
+    border: 5px outset #b5a359;
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    margin: 2rem auto;
+    min-height: 5rem;
+    padding: 1rem;
+    width: 40rem;
+
+    &__title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__page-title {
+      font-size: 2.25rem;
+      text-align: center;
+  }
+}
+
+.input-gemcutter {
+    margin: 0.5rem;
+}

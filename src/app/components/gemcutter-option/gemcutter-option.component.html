@@ -1,0 +1,12 @@
+<div class="gemcutter">
+  <input class="gemcutter__option"
+      type="radio"
+      name="gemcutter"
+      id="gemcutter-{{type}}"
+      value="none"
+      (click)="onSelect($event)"
+      [checked]="checked">
+  <label class="gemcutter__label" for="gemcutter-{{type}}">
+    {{label}}
+  </label>
+</div>

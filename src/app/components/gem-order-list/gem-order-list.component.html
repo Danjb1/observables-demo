@@ -1,0 +1,6 @@
+<div class="gem-order-list">
+    <span *ngIf="orders.length == 0">
+        None!
+    </span>
+    <app-gem *ngFor="let order of orders" [gem]="order.gem"></app-gem>
+</div>

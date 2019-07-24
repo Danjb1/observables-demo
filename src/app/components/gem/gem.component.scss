@@ -1,0 +1,25 @@
+.gem {
+  display: inline-block;
+  height: 32px;
+  font-size: 26px;
+  margin: 2px;
+  text-align: center;
+  width: 32px;
+
+  &--in-progress {
+    border: 2px #0096d1 dashed;
+    margin: 0px;
+  }
+
+  &--completed {
+    background: #96e996;
+    border: 2px #0ab60a solid;
+    margin: 0px;
+  }
+
+  &--discarded {
+    background: #ec8998;
+    border: 2px #d10021 solid;
+    margin: 0px;
+  }
+}

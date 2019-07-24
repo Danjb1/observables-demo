@@ -1,0 +1,43 @@
+<div class="panel">
+  <h1 class="panel__page-title">RxJS Observables Demo</h1>
+  <p>
+    Each Gem represents an order to be processed by a Gemcutter.
+    Some Gems take longer to process than others.
+    Orders go green when completed, and red when discarded.
+  </p>
+</div>
+
+<div class="panel">
+  <h1 class="panel__title">Gemcutter</h1>
+  <app-gemcutter-option
+      type="none"
+      label="None"
+      [checked]="true"
+      (selected)=gemcutterChanged($event)>
+  </app-gemcutter-option>
+  <app-gemcutter-option
+      type="concat-map"
+      label="Colin ConcatMap (new orders wait for the current order)"
+      (selected)=gemcutterChanged($event)>
+  </app-gemcutter-option>
+  <app-gemcutter-option
+      type="merge-map"
+      label="Maximus MergeMap (orders are processed in parallel)"
+      (selected)=gemcutterChanged($event)>
+  </app-gemcutter-option>
+  <app-gemcutter-option
+      type="switch-map"
+      label="Salvador SwitchMap (new orders cancel the current order)"
+      (selected)=gemcutterChanged($event)>
+  </app-gemcutter-option>
+  <app-gemcutter-option
+      type="exhaust-map"
+      label="Edmund ExhaustMap (new orders are ignored when busy)"
+      (selected)=gemcutterChanged($event)>
+  </app-gemcutter-option>
+</div>
+
+<div class="panel">
+  <h1 class="panel__title">Orders</h1>
+  <app-gem-order-list [orders]="orders"></app-gem-order-list>
+</div>
